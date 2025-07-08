@@ -14,7 +14,7 @@ static const float TEMP_THRESHOLD_HIGH = 31.0f;
 
 // Timeouts in milliseconds
 static const uint32_t INPUT_TIMEOUT_MS = 20000;  // 20 seconds
-static const uint32_t ACCESS_DENIED_TIMEOUT_MS = 3000;  // 3 seconds
+static const uint32_t ACCESS_DENIED_TIMEOUT_MS = 5000;  // 3 seconds
 
 // Private function prototypes
 static void room_control_change_state(room_control_t *room, room_state_t new_state);
