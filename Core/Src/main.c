@@ -173,7 +173,7 @@ int main(void)
   keypad_init(&keypad);
   
   // TODO: TAREA - Descomentar cuando implementen la lógica del sistema
-  // room_control_init(&room_system);
+   room_control_init(&room_system);
 
   /* USER CODE END 2 */
 
@@ -190,7 +190,7 @@ int main(void)
     heartbeat(); // Call the heartbeat function to toggle the LED
 
     // TODO: TAREA - Descomentar cuando implementen la máquina de estados
-    // room_control_update(&room_system);
+    room_control_update(&room_system);
 
     // DEMO: Keypad functionality - Remove when implementing room control logic
     if (keypad_interrupt_pin != 0) {
@@ -199,7 +199,7 @@ int main(void)
         write_to_oled(&key, White, 31, 31);
         
         // TODO: TAREA - Descomentar para enviar teclas al sistema de control
-        // room_control_process_key(&room_system, key);
+         room_control_process_key(&room_system, key);
       }
       keypad_interrupt_pin = 0;
     }
@@ -464,19 +464,19 @@ static void MX_GPIO_Init(void)
 
   /*Configure GPIO pin : KEYPAD_C1_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C1_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(KEYPAD_C1_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pin : KEYPAD_C4_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C4_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(KEYPAD_C4_GPIO_Port, &GPIO_InitStruct);
 
   /*Configure GPIO pins : KEYPAD_C2_Pin KEYPAD_C3_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C2_Pin|KEYPAD_C3_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_IT_RISING;
+  GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
