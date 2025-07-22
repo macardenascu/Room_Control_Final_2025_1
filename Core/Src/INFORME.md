@@ -1,5 +1,3 @@
-
-```markdown
 # Informe del Proyecto: Sistema de Control de Sala Automático
 
 Este documento detalla la arquitectura de hardware y firmware, el protocolo de comunicación y las técnicas de optimización empleadas en el desarrollo del sistema de control de sala.
@@ -8,6 +6,8 @@ Este documento detalla la arquitectura de hardware y firmware, el protocolo de c
 
 *   Samuel Elias Gómez Muñoz
 
+---
+
 ## 2. Arquitectura de Hardware
 
 ### 2.1. Diagrama de Conexiones
@@ -15,17 +15,17 @@ Este documento detalla la arquitectura de hardware y firmware, el protocolo de c
 El sistema se compone de los siguientes bloques conectados al microcontrolador STM32L476RG:
 
 *   **Entradas:**
-    *   **Teclado Matricial 4x4:** Conectado a pines GPIO para filas y columnas.
-    *   **Sensor DHT11:** Conectado a un pin GPIO y utiliza el TIM6 para la temporización.
-    *   **PC Local (Consola):** Conectado vía ST-Link (Virtual COM Port) al USART2.
+  *   **Teclado Matricial 4x4:** Conectado a pines GPIO para filas y columnas.
+  *   **Sensor DHT11:** Conectado a un pin GPIO y utiliza el TIM6 para la temporización.
+  *   **PC Local (Consola):** Conectado vía ST-Link (Virtual COM Port) al USART2.
 
 *   **Salidas:**
-    *   **Display OLED 128x64:** Conectado al bus I2C1 (pines SDA/SCL).
-    *   **Ventilador DC:** Controlado por una señal PWM desde el TIM3.
-    *   **Actuador de Puerta:** Controlado por un pin GPIO.
+  *   **Display OLED 128x64:** Conectado al bus I2C1 (pines SDA/SCL).
+  *   **Ventilador DC:** Controlado por una señal PWM desde el TIM3.
+  *   **Actuador de Puerta:** Controlado por un pin GPIO.
     
 *   **Conectividad:**
-    *   **Módulo WiFi ESP-01:** Conectado a los pines RX/TX del USART3.
+  *   **Módulo WiFi ESP-01:** Conectado a los pines RX/TX del USART3.
 
 
 ### 2.2. Explicación de Componentes
@@ -103,6 +103,8 @@ graph TD
     
     ssd1306 --> HAL_I2C
 ```
+---
+---
 
 ## 4. Protocolo de Comandos
 
@@ -130,4 +132,3 @@ Para asegurar un rendimiento fluido y un bajo consumo de CPU, se han aplicado va
 
 3.  **Actualización de Pantalla por Eventos:** La pantalla OLED no se redibuja en cada ciclo del bucle principal, lo cual sería muy ineficiente y generaría un tráfico I2C constante. En su lugar, se utiliza una bandera (`display_update_needed`). La pantalla solo se actualiza cuando un evento relevante ocurre (un cambio de estado, una nueva lectura de temperatura, etc.), optimizando significativamente el rendimiento.
 ```
-
