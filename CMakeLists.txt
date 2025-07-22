@@ -37,6 +37,8 @@ message("Build type: " ${CMAKE_BUILD_TYPE})
 # Create an executable object type
 add_executable(${CMAKE_PROJECT_NAME})
 
+    # Habilitar el soporte para floats en funciones como printf/sprintf
+    target_link_options(${CMAKE_PROJECT_NAME} PRIVATE -u _printf_float)
 # Add STM32CubeMX generated sources
 add_subdirectory(cmake/stm32cubemx)
 
@@ -53,6 +55,7 @@ target_sources(${CMAKE_PROJECT_NAME} PRIVATE
     Drivers/ssd1306/ssd1306_fonts.c
     Drivers/keypad/keypad.c
     Core/Src/room_control.c
+    Core/Src/dht11.c
     # Add user sources here
 )
 
