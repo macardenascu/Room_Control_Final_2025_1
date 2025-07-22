@@ -8,8 +8,6 @@ Este documento detalla la arquitectura de hardware y firmware, el protocolo de c
 
 *   Samuel Elias Gómez Muñoz
 
----
-
 ## 2. Arquitectura de Hardware
 
 ### 2.1. Diagrama de Conexiones
@@ -105,8 +103,6 @@ graph TD
     
     ssd1306 --> HAL_I2C
 ```
-
----
 
 ## 4. Protocolo de Comandos
 
