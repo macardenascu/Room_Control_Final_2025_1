@@ -221,7 +221,7 @@ HAL_UART_Transmit(&huart3, (uint8_t*)alert_msg, strlen(alert_msg), 1000);
 - [Si] Contraseña correcta desbloquea el sistema
 - [Si] Contraseña incorrecta muestra error
 - [Si] Display muestra estado actual claramente
-- [ ] Puerta (LED) responde al estado del sistema
+- [Si] Puerta (LED) responde al estado del sistema
 - [Si] Super loop no usa `HAL_Delay()`
 
 ### **Funcionalidad Avanzada:**
