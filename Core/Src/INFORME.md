@@ -14,33 +14,21 @@ Este documento detalla la arquitectura de hardware y firmware, el protocolo de c
 
 ### 2.1. Diagrama de Conexiones
 
-El siguiente diagrama muestra los componentes principales del sistema y cómo se interconectan con el microcontrolador STM32.
+El sistema se compone de los siguientes bloques conectados al microcontrolador STM32L476RG:
 
-```mermaid
-graph TD
-    subgraph "Placa de Desarrollo"
-        STM32L476RG(STM32L476RG)
-    end
+*   **Entradas:**
+    *   **Teclado Matricial 4x4:** Conectado a pines GPIO para filas y columnas.
+    *   **Sensor DHT11:** Conectado a un pin GPIO y utiliza el TIM6 para la temporización.
+    *   **PC Local (Consola):** Conectado vía ST-Link (Virtual COM Port) al USART2.
 
-    subgraph "Periféricos de Entrada"
-        Keypad[Teclado Matricial 4x4] -->|GPIOs de Filas/Columnas| STM32L476RG
-        DHT11[Sensor de Temp/Humedad DHT11] -->|PAx (GPIO) & TIM6| STM32L476RG
-        PC_Local[PC Local] -->|USB ST-Link (VCP)| USART2{USART2}
-    end
-
-    subgraph "Módulo de Conectividad"
-        ESP01[Módulo WiFi ESP-01] <-->|TX/RX| USART3{USART3}
-    end
+*   **Salidas:**
+    *   **Display OLED 128x64:** Conectado al bus I2C1 (pines SDA/SCL).
+    *   **Ventilador DC:** Controlado por una señal PWM desde el TIM3.
+    *   **Actuador de Puerta:** Controlado por un pin GPIO.
     
-    subgraph "Periféricos de Salida"
-        OLED[Display OLED 128x64] <-->|I2C1 (SDA/SCL)| STM32L476RG
-        Fan[Ventilador DC] <--|Señal PWM (TIM3)| STM32L476RG
-        DoorLock[Actuador de Puerta] <--|GPIO| STM32L476RG
-    end
-    
-    STM32L476RG -- Conexión --> USART2
-    STM32L476RG -- Conexión --> USART3
-```
+*   **Conectividad:**
+    *   **Módulo WiFi ESP-01:** Conectado a los pines RX/TX del USART3.
+
 
 ### 2.2. Explicación de Componentes
 
