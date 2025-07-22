@@ -216,18 +216,18 @@ HAL_UART_Transmit(&huart3, (uint8_t*)alert_msg, strlen(alert_msg), 1000);
 ## 🎯 **Checklist de Funcionalidades**
 
 ### **Funcionalidad Básica:**
-- [ ] Sistema enciende y muestra estado inicial
-- [ ] Teclado permite entrada de 4 dígitos
-- [ ] Contraseña correcta desbloquea el sistema
-- [ ] Contraseña incorrecta muestra error
-- [ ] Display muestra estado actual claramente
+- [Si] Sistema enciende y muestra estado inicial
+- [Si] Teclado permite entrada de 4 dígitos
+- [Si] Contraseña correcta desbloquea el sistema
+- [Si] Contraseña incorrecta muestra error
+- [Si] Display muestra estado actual claramente
 - [ ] Puerta (LED) responde al estado del sistema
-- [ ] Super loop no usa `HAL_Delay()`
+- [Si] Super loop no usa `HAL_Delay()`
 
 ### **Funcionalidad Avanzada:**
-- [ ] Sensor de temperatura funciona
-- [ ] Ventilador responde automáticamente a temperatura
-- [ ] 4 niveles de velocidad implementados correctamente
+- [Si] Sensor de temperatura funciona
+- [Si] Ventilador responde automáticamente a temperatura
+- [Si] 4 niveles de velocidad implementados correctamente
 - [ ] Comandos remotos por USART2 funcionan
 - [ ] Comandos remotos por USART3 funcionan
 - [ ] Alertas de internet al acceso denegado
