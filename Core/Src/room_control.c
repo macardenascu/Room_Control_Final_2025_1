@@ -57,7 +57,9 @@ void room_control_init(room_control_t *room) {
     HAL_TIM_PWM_Start(&FAN_PWM_TIMER, FAN_PWM_CHANNEL);
     room_control_update_fan_pwm(room); // Establecer PWM inicial a 0%
 }
-
+// --- Actualiza el estado del sistema y maneja la lógica de entrada de contraseña ---
+/// @param room Puntero al sistema de control de habitación
+/// @note Esta función se llama periódicamente para actualizar el estado del sistema
 void room_control_update(room_control_t *room) {
     uint32_t current_time = HAL_GetTick();
     
@@ -100,7 +102,10 @@ void room_control_update(room_control_t *room) {
         room->display_update_needed = false;
     }
 }
-
+// --- Procesa una tecla del teclado y actualiza el estado del sistema ---
+/// @param room Puntero al sistema de control de habitación
+/// @param key El carácter de la tecla presionada
+/// @note Esta función maneja la lógica de entrada de contraseña y transiciones de estado
 void room_control_process_key(room_control_t *room, char key) {
     room->last_input_time = HAL_GetTick();
 
@@ -144,6 +149,10 @@ void room_control_process_key(room_control_t *room, char key) {
             break;
     }
 }
+// --- CORRECCIÓN CRÍTICA: Establece la temperatura actual y actualiza el ventilador ---
+/// @brief Establece la temperatura actual y actualiza el nivel del ventilador
+/// @param room Puntero al sistema de control de habitación
+/// @param temperature La temperatura a establecer
 
 void room_control_set_temperature(room_control_t *room, float temperature) {
     // Usar histéresis para evitar cambios constantes si la temperatura fluctúa poco
@@ -163,7 +172,10 @@ void room_control_set_temperature(room_control_t *room, float temperature) {
         }
     }
 }
-
+// --- CORRECCIÓN CRÍTICA: Fuerza un nivel de ventilador específico ---
+/// @brief Fuerza un nivel de ventilador específico, ignorando la temperatura
+/// @param room Puntero al sistema de control de habitación
+/// @param level El nivel de ventilador a establecer
 void room_control_force_fan_level(room_control_t *room, fan_level_t level) {
     if (room->current_state == ROOM_STATE_UNLOCKED) {
         room->manual_fan_override = true;
@@ -189,6 +201,9 @@ fan_level_t room_control_get_fan_level(room_control_t *room) { return room->curr
 float room_control_get_temperature(room_control_t *room) { return room->current_temperature; }
 
 // --- Private functions ---
+/// @brief Cambia el estado del sistema y actualiza el display
+/// @param room Puntero al sistema de control de habitación
+/// @param new_state El nuevo estado al que se cambiará
 static void room_control_change_state(room_control_t *room, room_state_t new_state) {
     if (room->current_state == new_state) return; // Evitar re-entrar al mismo estado
 
@@ -228,7 +243,10 @@ static void room_control_change_state(room_control_t *room, room_state_t new_sta
     
     room_control_update_door(room); // Actualizar estado físico de la puerta
 }
-
+// --- Actualiza el display OLED con el estado actual del sistema ---
+/// @param room Puntero al sistema de control de habitación
+/// @note Esta función se llama al cambiar de estado o cuando se necesita actualizar el display
+///       para reflejar el estado actual del sistema.
 static void room_control_update_display(room_control_t *room) {
     char display_buffer[32];
     ssd1306_Fill(Black);
@@ -283,7 +301,11 @@ static void room_control_update_display(room_control_t *room) {
 
     ssd1306_UpdateScreen(); 
 }
-
+// --- CORRECCIÓN CRÍTICA: Actualiza el estado de la puerta ---
+/// @brief Actualiza el estado físico de la puerta según el estado actual   
+/// @param room Puntero al sistema de control de habitación
+/// @note Esta función se llama al cambiar de estado para reflejar el bloqueo/desbloqueo
+///       de la puerta en el hardware el LED conectado a PA4.
 static void room_control_update_door(room_control_t *room) {
     // *** CORRECCIÓN: Lógica de control de puerta activada ***
     if (room->door_locked) {
@@ -292,20 +314,29 @@ static void room_control_update_door(room_control_t *room) {
         HAL_GPIO_WritePin(DOOR_LOCK_GPIO_Port, DOOR_LOCK_Pin, GPIO_PIN_SET);
     }
 }
-
+/// @brief Actualiza el PWM del ventilador basado en el nivel actual
+/// @param room Puntero al sistema de control de habitación
+/// @note Esta función se llama cada vez que cambia el nivel del ventilador
+///       o al iniciar el sistema. Asegura que el PWM del ventilador
 static void room_control_update_fan_pwm(room_control_t *room) {
     // El periodo de TIM3 se configuró a 100, así que el nivel de fan (0-100) mapea directamente.
     uint32_t pwm_pulse = (uint32_t)room->current_fan_level;
     __HAL_TIM_SET_COMPARE(&FAN_PWM_TIMER, FAN_PWM_CHANNEL, pwm_pulse);
 }
 
+/// @brief Calcula el nivel del ventilador basado en la temperatura
+/// @param temperature La temperatura actual
+/// @return El nivel del ventilador correspondiente
 static fan_level_t room_control_calculate_fan_level(float temperature) {
     if (temperature < TEMP_THRESHOLD_LOW)       return FAN_LEVEL_OFF;
     else if (temperature < TEMP_THRESHOLD_MED)  return FAN_LEVEL_LOW;
     else if (temperature < TEMP_THRESHOLD_HIGH) return FAN_LEVEL_MED;
     else                                        return FAN_LEVEL_HIGH;
 }
-
+/// @brief Limpia el buffer de entrada y resetea el índice
+/// @param room Puntero al sistema de control de habitación     
+/// @note Esta función se usa para reiniciar la entrada del usuario
+///       cuando se cambia de estado o se cancela la entrada.
 static void room_control_clear_input(room_control_t *room) {
     memset(room->input_buffer, 0, sizeof(room->input_buffer));
     room->input_index = 0;

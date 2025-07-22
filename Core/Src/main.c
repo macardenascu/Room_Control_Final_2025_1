@@ -48,7 +48,6 @@
 I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim6; // Declaración para TIM6, necesaria para el DHT11
-// << CAMBIO: Se renombra la variable DMA para que coincida con el nuevo canal del timer.
 DMA_HandleTypeDef hdma_tim3_ch2;
 UART_HandleTypeDef huart2;
 
@@ -61,7 +60,9 @@ led_handle_t heartbeat_led = {
 };
 
 uint8_t usart_2_rxbyte = 0;
-
+/// @brief Manejador del teclado
+/// @note Este manejador contiene la configuración de los pines del teclado y se inicializa
+///       en la función `keypad_init()`.
 keypad_handle_t keypad = {
     .row_ports = {KEYPAD_R1_GPIO_Port, KEYPAD_R2_GPIO_Port, KEYPAD_R3_GPIO_Port, KEYPAD_R4_GPIO_Port},
     .row_pins  = {KEYPAD_R1_Pin, KEYPAD_R2_Pin, KEYPAD_R3_Pin, KEYPAD_R4_Pin},
@@ -144,20 +145,33 @@ int main(void)
   /* USER CODE END 2 */
 
   /* Infinite loop */
+  
   uint32_t last_dht_read_time = 0;
   const uint32_t DHT_READ_INTERVAL_MS = 2000;
 
   while (1)
   {
+    /// @brief Bucle principal del programa
+    ///       Este bucle se ejecuta continuamente y maneja la lógica del sistema de control de habitación,
+    ///       incluyendo la actualización del estado del sistema, la lectura del DHT11, el escaneo del teclado
+    ///       y la actualización del display OLED.
     heartbeat();
     room_control_update(&room_system);
 
     // --- Lógica del DHT11 ---
+    /// @brief Lógica del DHT11
+    /// @note Esta función inicia la lectura del DHT11 y procesa los datos cada cierto intervalo de tiempo
+    ///       el cual es DHT_READ_INTERVAL_MS.
     if (HAL_GetTick() - last_dht_read_time >= DHT_READ_INTERVAL_MS) {
         if (DHT11_StartReading()) {
             last_dht_read_time = HAL_GetTick();
         }
     }
+    // Procesar la lectura del DHT11
+    /// @brief Procesa la lectura del DHT11
+    /// @note Esta función procesa los datos del DHT11 y actualiza la temperatura en el sistema de control de habitación
+    ///       Si los datos están listos, actualiza la temperatura en el sistema de control de habitación.
+    ///       Si la lectura es exitosa, actualiza la temperatura en el sistema de control de habitación.
     DHT11_Process();
     if (DHT11_IsDataReady()) {
         float temp, hum;
@@ -167,6 +181,9 @@ int main(void)
     }
 
     // --- Lógica del Keypad ---
+    /// @brief Lógica del teclado
+    /// @note Esta función escanea el teclado y procesa las teclas presionadas
+
     if (keypad_interrupt_pin != 0) {
       char key = keypad_scan(&keypad, keypad_interrupt_pin);
       if (key != '\0') {

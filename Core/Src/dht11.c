@@ -1,4 +1,3 @@
-// dht11.c (VERSIÓN CORREGIDA Y ROBUSTA)
 #include "dht11.h"
 #include <string.h>
 
@@ -9,18 +8,26 @@
 #define BIT_HIGH_PULSE_THRESHOLD_US  45    // Umbral para decidir entre '0' y '1'. (Un '0' dura ~28us, un '1' ~70us)
 
 //--- Máquina de Estados Simplificada ---
+/// Esta máquina de estados simplificada maneja la lectura del DHT11 en un solo estado de lectura de bits.
+/// Se inicia con un pulso de inicio, espera la respuesta del sensor y luego lee todos
+/// los bits de una sola vez, lo que es más fiable y rápido que leer bit a bit.
+
 typedef enum {
     DHT11_STATE_IDLE,
     DHT11_STATE_START_PULLDOWN,
     DHT11_STATE_START_PULLUP,
     DHT11_STATE_WAIT_RESPONSE_LOW,
     DHT11_STATE_WAIT_RESPONSE_HIGH,
-    DHT11_STATE_READ_BITS,          // <-- CAMBIO CLAVE: Un solo estado para leer todos los bits
+    DHT11_STATE_READ_BITS,          // CAMBIO CLAVE: Un solo estado para leer todos los bits
     DHT11_STATE_COMPLETE,
     DHT11_STATE_ERROR
 } DHT11_State_t;
 
-//--- Variables estáticas del módulo ---
+/// @brief Estructura para manejar el DHT11
+/// @note Esta estructura contiene el estado actual, el temporizador y los datos leídos
+///       Se inicializa en la función `DHT11_Init()`.
+/// @note El estado se maneja mediante una máquina de estados simplificada.
+///       La lectura de bits se hace en un solo estado para mayor fiabilidad.
 static TIM_HandleTypeDef* dht_timer;
 static DHT11_State_t current_state = DHT11_STATE_IDLE;
 
@@ -32,6 +39,10 @@ static float last_humidity = 0.0f;
 static bool data_ready_flag = false;
 
 // --- Funciones auxiliares de Pin ---
+/// Estas funciones configuran el pin del DHT11 como salida o entrada
+/// y establecen el pull-up necesario.
+/// Estas funciones son llamadas por la máquina de estados para cambiar el modo del pin
+/// según sea necesario.
 static void DHT11_Set_Pin_Output(void) {
     GPIO_InitTypeDef GPIO_InitStruct = {0};
     GPIO_InitStruct.Pin = DHT11_PIN;
@@ -128,7 +139,11 @@ static bool read_data_bits(uint8_t* data_out) {
     return true;
 }
 
-
+/// @brief Procesa la lectura del DHT11
+/// @param None
+/// @note Esta función procesa los datos del DHT11 y actualiza la temperatura en el sistema de control de habitación
+///       Si los datos están listos, actualiza la temperatura en el sistema de control de habitación.
+///       Si la lectura es exitosa, actualiza la temperatura en el sistema de control de la habitación.
 void DHT11_Process(void) {
     uint16_t current_time_us = __HAL_TIM_GET_COUNTER(dht_timer);
     uint16_t elapsed_us = current_time_us - last_event_time_us;
