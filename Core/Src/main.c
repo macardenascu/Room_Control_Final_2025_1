@@ -48,7 +48,8 @@
 I2C_HandleTypeDef hi2c1;
 TIM_HandleTypeDef htim3;
 TIM_HandleTypeDef htim6; // Declaración para TIM6, necesaria para el DHT11
-DMA_HandleTypeDef hdma_tim3_ch1_trig;
+// << CAMBIO: Se renombra la variable DMA para que coincida con el nuevo canal del timer.
+DMA_HandleTypeDef hdma_tim3_ch2;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
@@ -80,7 +81,7 @@ static void MX_DMA_Init(void);
 static void MX_USART2_UART_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_TIM3_Init(void);
-static void MX_TIM6_Init(void); 
+static void MX_TIM6_Init(void);
 
 /* USER CODE BEGIN PFP */
 /* USER CODE END PFP */
@@ -129,14 +130,14 @@ int main(void)
   MX_USART2_UART_Init();
   MX_I2C1_Init();
   MX_TIM3_Init();
-  MX_TIM6_Init(); 
+  MX_TIM6_Init();
 
   /* USER CODE BEGIN 2 */
   led_init(&heartbeat_led);
   ssd1306_Init();
   keypad_init(&keypad);
   room_control_init(&room_system);
-  DHT11_Init(&htim6); 
+  DHT11_Init(&htim6);
 
   char* startup_msg = "ROOM CONTROL ENABLE\r\n";
   HAL_UART_Transmit(&huart2, (uint8_t*)startup_msg, strlen(startup_msg), 100);
@@ -272,7 +273,9 @@ static void MX_TIM3_Init(void)
   sConfigOC.Pulse = 0;
   sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
   sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_1) != HAL_OK)
+
+  // << CAMBIO: Se configura el canal 2 (para PA7) en lugar del canal 1 (para PA6).
+  if (HAL_TIM_PWM_ConfigChannel(&htim3, &sConfigOC, TIM_CHANNEL_2) != HAL_OK)
   {
     Error_Handler();
   }
@@ -328,9 +331,13 @@ static void MX_USART2_UART_Init(void)
   */
 static void MX_DMA_Init(void)
 {
+  /* DMA controller clock enable */
   __HAL_RCC_DMA1_CLK_ENABLE();
-  HAL_NVIC_SetPriority(DMA1_Channel6_IRQn, 0, 0);
-  HAL_NVIC_EnableIRQ(DMA1_Channel6_IRQn);
+
+  /* DMA interrupt init */
+  // << CAMBIO: Se habilita la interrupción para el Canal 4 del DMA, que corresponde a TIM3_CH2.
+  HAL_NVIC_SetPriority(DMA1_Channel4_IRQn, 0, 0);
+  HAL_NVIC_EnableIRQ(DMA1_Channel4_IRQn);
 }
 
 /**
@@ -340,48 +347,58 @@ static void MX_GPIO_Init(void)
 {
   GPIO_InitTypeDef GPIO_InitStruct = {0};
 
+  /* GPIO Ports Clock Enable */
   __HAL_RCC_GPIOC_CLK_ENABLE();
   __HAL_RCC_GPIOH_CLK_ENABLE();
   __HAL_RCC_GPIOA_CLK_ENABLE();
   __HAL_RCC_GPIOB_CLK_ENABLE();
 
+  /*Configure GPIO pin Output Level */
   HAL_GPIO_WritePin(GPIOA, DOOR_STATUS_Pin|LD2_Pin|KEYPAD_R1_Pin, GPIO_PIN_RESET);
   HAL_GPIO_WritePin(GPIOB, KEYPAD_R2_Pin|KEYPAD_R4_Pin|KEYPAD_R3_Pin, GPIO_PIN_RESET);
 
+  /*Configure GPIO pin : B1_Pin */
   GPIO_InitStruct.Pin = B1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   HAL_GPIO_Init(B1_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : DOOR_STATUS_Pin LD2_Pin KEYPAD_R1_Pin */
   GPIO_InitStruct.Pin = DOOR_STATUS_Pin|LD2_Pin|KEYPAD_R1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : KEYPAD_C1_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C1_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(KEYPAD_C1_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pin : KEYPAD_C4_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C4_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(KEYPAD_C4_GPIO_Port, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : KEYPAD_C2_Pin KEYPAD_C3_Pin */
   GPIO_InitStruct.Pin = KEYPAD_C2_Pin|KEYPAD_C3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_IT_FALLING;
   GPIO_InitStruct.Pull = GPIO_PULLUP;
   HAL_GPIO_Init(GPIOA, &GPIO_InitStruct);
 
+  /*Configure GPIO pins : KEYPAD_R2_Pin KEYPAD_R4_Pin KEYPAD_R3_Pin */
   GPIO_InitStruct.Pin = KEYPAD_R2_Pin|KEYPAD_R4_Pin|KEYPAD_R3_Pin;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
 
+  /* EXTI interrupt init*/
   HAL_NVIC_SetPriority(EXTI9_5_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI9_5_IRQn);
+
   HAL_NVIC_SetPriority(EXTI15_10_IRQn, 0, 0);
   HAL_NVIC_EnableIRQ(EXTI15_10_IRQn);
 }
@@ -395,10 +412,13 @@ static void MX_GPIO_Init(void)
   */
 void Error_Handler(void)
 {
+  /* USER CODE BEGIN Error_Handler_Debug */
+  /* User can add his own implementation to report the HAL error return state */
   __disable_irq();
   while (1)
   {
   }
+  /* USER CODE END Error_Handler_Debug */
 }
 
 #ifdef  USE_FULL_ASSERT
@@ -411,5 +431,9 @@ void Error_Handler(void)
   */
 void assert_failed(uint8_t *file, uint32_t line)
 {
+  /* USER CODE BEGIN 6 */
+  /* User can add his own implementation to report the file name and line number,
+     ex: printf("Wrong parameters value: file %s on line %d\r\n", file, line) */
+  /* USER CODE END 6 */
 }
 #endif /* USE_FULL_ASSERT */

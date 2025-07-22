@@ -10,7 +10,7 @@ extern UART_HandleTypeDef huart2;
 
 // Hardware mapping
 #define FAN_PWM_TIMER           htim3
-#define FAN_PWM_CHANNEL         TIM_CHANNEL_1
+#define FAN_PWM_CHANNEL         TIM_CHANNEL_2
 #define DOOR_LOCK_GPIO_Port     DOOR_STATUS_GPIO_Port
 #define DOOR_LOCK_Pin           DOOR_STATUS_Pin
 
