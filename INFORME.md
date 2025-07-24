@@ -1,134 +1,134 @@
 # Informe del Proyecto: Sistema de Control de Sala Automático
 
-Este documento detalla la arquitectura de hardware y firmware, el protocolo de comunicación y las técnicas de optimización empleadas en el desarrollo del sistema de control de sala.
+En este informe se busca explicar brevemente el funcionamiento del proyecto final, en el cual, se busca controlar remotamente el acceso a una habitación y su ventilación, haciendo uso de un teclado, un display OLED, sensores de temperatura y control PWM de ventilador.
 
-## 1. Integrantes
+## 1. Integrantes.
 
-*   Samuel Elias Gómez Muñoz
-
----
-
-## 2. Arquitectura de Hardware
-
-### 2.1. Diagrama de Conexiones
-
-El sistema se compone de los siguientes bloques conectados al microcontrolador STM32L476RG:
-
-*   **Entradas:**
-  *   **Teclado Matricial 4x4:** Conectado a pines GPIO para filas y columnas.
-  *   **Sensor DHT11:** Conectado a un pin GPIO y utiliza el TIM6 para la temporización.
-  *   **PC Local (Consola):** Conectado vía ST-Link (Virtual COM Port) al USART2.
-
-*   **Salidas:**
-  *   **Display OLED 128x64:** Conectado al bus I2C1 (pines SDA/SCL).
-  *   **Ventilador DC:** Controlado por una señal PWM desde el TIM3.
-  *   **Actuador de Puerta:** Controlado por un pin GPIO.
-    
-*   **Conectividad:**
-  *   **Módulo WiFi ESP-01:** Conectado a los pines RX/TX del USART3.
-
-
-### 2.2. Explicación de Componentes
-
-*   **Microcontrolador (STM32L476RG):** Es el cerebro del sistema. Ejecuta el firmware principal, gestiona los periféricos, procesa los datos de los sensores y toma decisiones de control.
-*   **Sensor de Temperatura y Humedad (DHT11):** Mide las condiciones ambientales de la sala. Se comunica a través de un único pin de datos (GPIO), y su timing preciso es gestionado con la ayuda de un temporizador (TIM6) para medir la duración de los pulsos.
-*   **Display OLED (SSD1306):** Actúa como la interfaz de usuario visual principal, mostrando el estado del sistema, la temperatura, la velocidad del ventilador y los menús de acceso. Se conecta a través del bus I2C1.
-*   **Teclado Matricial 4x4:** Es el principal método de entrada local para que el usuario ingrese la contraseña y controle el sistema. Su lectura se optimiza mediante interrupciones en los pines de las columnas.
-*   **Ventilador DC:** Es el actuador principal para regular la temperatura. Su velocidad se controla de forma precisa mediante una señal PWM (Modulación por Ancho de Pulso) generada por el TIM3.
-*   **Módulo WiFi (ESP-01):** Proporciona la conectividad remota. Se utiliza con el firmware `esp-link` para actuar como un puente transparente entre UART y TCP/IP, permitiendo la comunicación a través de la red WiFi. Se conecta al microcontrolador a través del periférico USART3.
-*   **Consola de Depuración (USART2):** A través del ST-Link (Virtual COM Port), se establece una consola de comandos local para depuración y control directo desde un PC.
+*   Mateo Cárdenas Cuesta 1059696999
+*   Juan Fernando Martinez 1084221744 
 
 ---
 
-## 3. Arquitectura de Firmware
+## 2. Componentes utilizados.
 
-### 3.1. Patrones de Diseño Aplicados
+### 2.1. Hardware:
 
-El firmware se estructura en torno a dos patrones de diseño principales para garantizar un funcionamiento robusto y eficiente.
+*   **Placa principal:** STM32 Núcleo-L476RG.
+*   **Pantalla OLED:** (I2C).
+*   **Teclado matricial:** 4x4.
+*   **Sensor de temperatura:** DHT11.
+*   **Módulo ventilador:** Controlado por PWM.
+*   **Actuador de puerta (simulado por LED)**
+*   **(ESP-01 previsto pero no implementado)**
 
-*   **Super Loop (Bucle Principal):** El núcleo del programa reside en el bucle infinito `while(1)` dentro de `main.c`. Este patrón se encarga de ejecutar tareas no bloqueantes de forma continua. En cada iteración, el bucle:
-    1.  Llama a la función `heartbeat()` para indicar visualmente que el sistema está operativo.
-    2.  Actualiza la máquina de estados principal (`room_control_update`).
-    3.  Gestiona la lectura no bloqueante del sensor DHT11.
-    4.  Comprueba si se han recibido comandos por los puertos serie.
-    5.  Comprueba si se ha pulsado una tecla en el keypad.
 
-*   **Máquina de Estados (State Machine):** El control lógico del sistema se implementa como una máquina de estados finitos dentro del módulo `room_control`. Esto permite un manejo claro y seguro de los diferentes modos de operación. Los estados definidos son:
-    *   `ROOM_STATE_LOCKED`: El estado por defecto y más seguro. El sistema está bloqueado y solo responde a intentos de ingreso de contraseña.
-    *   `ROOM_STATE_INPUT_PASSWORD`: El sistema está esperando que el usuario ingrese los 4 dígitos de la contraseña.
-    *   `ROOM_STATE_UNLOCKED`: Acceso concedido. En este estado, el usuario puede interactuar con las funciones del sistema, como forzar la velocidad del ventilador.
-    *   `ROOM_STATE_ACCESS_DENIED`: Un estado temporal que se muestra cuando la contraseña ingresada es incorrecta, antes de volver automáticamente al estado `LOCKED`.
+### 2.2. Software:
 
-### 3.2. Diagrama de Componentes de Software
+*   **STM32CubeIDE**
+*   **HAL Drivers**
+*   **Librerias para SSD1306 y DHT11**
+*   **Código en C estructurado en módulos (main.c, room_control.c)**
 
-El firmware está modularizado para separar responsabilidades, facilitando el mantenimiento y la escalabilidad.
+---
+
+## 3. Arquitectura del Sistema.
+
+### 3.1. Máquina de Estados (room_control.c):
+
+*   **ROOM_STATE_LOCKED:** Estado inicial, puerta bloqueada.
+  
+*   **ROOM_STATE_INPUT_PASSWORD:** Se espera a que sea ingresada una clave (0000).
+
+*   **ROOM_STATE_UNLOCKED:** Acceso concedido, habilita el control de ventilación.
+
+*   **ROOM_STATE_ACCESS_DENIED:** En caso de clave incorrecta, acceso denegado.
+
+### 3.2. Diagrama de Componentes de Software:
 
 ```mermaid
-graph TD
-    subgraph "Capa de Aplicación"
-        main(main.c)
-        room_control(room_control.c)
-    end
-
-    subgraph "Capa de Drivers/Módulos"
-        dht11(dht11.c)
-        keypad(keypad.c)
-        ssd1306(ssd1306.c)
-        command_parser("Lógica de Comandos en main.c")
-    end
-
-    subgraph "Capa de Abstracción de Hardware (HAL)"
-        HAL_GPIO(HAL GPIO)
-        HAL_TIM(HAL TIM)
-        HAL_UART(HAL UART)
-        HAL_I2C(HAL I2C)
-    end
-
-    main --> room_control
-    main --> dht11
-    main --> keypad
-    main --> command_parser
-
-    room_control --> ssd1306
-    room_control --> HAL_TIM
-    room_control --> HAL_GPIO
-
-    dht11 --> HAL_GPIO
-    dht11 --> HAL_TIM
-    
-    keypad --> HAL_GPIO
-    
-    command_parser --> HAL_UART
-    command_parser --> room_control
-    
-    ssd1306 --> HAL_I2C
+flowchart TD
+    A["Inicio del sistema main.c"] --> B{"Estado actual"}
+    B -- LOCKED --> C["Esperar entrada de clave keypad.c"]
+    C --> D["Mostrar **** en OLED"]
+    D --> E{"¿Clave completa?"}
+    E -- No --> C
+    E -- Sí --> F["Validar clave"]
+    F --> G{"¿Clave correcta?"}
+    G -- Sí --> H["Mostrar Acceso Concedido"]
+    H --> I["Activar ventilador"]
+    I --> J["Leer temperatura"]
+    J --> K["Ajustar PWM según nivel térmico"]
+    K --> L{"¿Timeout o comando?"}
+    L -- Sí --> B
+    L -- No --> J
+    G -- No --> M["Mostrar Acceso Denegado"]
+    M --> O["Esperar nueva clave"]
+    O --> B
 ```
 ---
+
+## 4. Descripción funcional.
+
+### 4.1 Ingreso de Clave:
+*   Usuario introduce una clave de 4 dígitos usando el teclado.
+*   Al completarla, se compara con la clave por defecto, en este caso "0000".
+*   **Si es correcta:** Se desbloquea la puerta y se habilita la visualización de temperatura y ventilador.
+*   **Si es incorrecta:** Se muestra "ACCESO DENEGADO" y luego se bloquea.
+
+### 4.2 Control del Ventilador:
+*   Modo automático por defecto (basado en temperatura):
+      1. "<" 25 °C apagado.
+      2. 25 - 28 °C nivel bajo.
+      3. 28 - 31 °C nivel medio.
+      4. ">" 31 °C nivel alto.
+
+### 4.3 Pantalla OLED:
+*   Muestra distintos mensajes según el estado:
+     1. Sistema bloqueado.
+     2. Ingreso de clave (con asteriscos).
+     3. Acceso permitido con la temperatura actual y el nivel del ventilador.
+    4. Acceso denegado.
+
+### 4.4 Control de puerta:
+*   Simulado con un pin de salida (GPIO), activo o inactivo dependiendo del estado. 
 ---
 
-## 4. Protocolo de Comandos
+## 5. Módulo room_control.c
 
-Se ha implementado un protocolo de comandos basado en texto simple, accesible a través de la consola local (USART2) y la consola remota (USART3). Los comandos finalizan con un carácter de nueva línea (`\n`).
+Resumen de funciones clave:
 
-| Comando         | Parámetros        | Descripción                                                                 | Requiere Autenticación (Remoto) | Requiere Estado Desbloqueado |
-|:----------------|:------------------|:----------------------------------------------------------------------------|:-------------------------------:|:----------------------------:|
-| `GET_TEMP`      | Ninguno           | Devuelve la temperatura actual medida por el sensor DHT11.                  | No                              | No                           |
-| `GET_STATUS`    | Ninguno           | Devuelve el estado actual del sistema (Bloqueado/Desbloqueado, modo y nivel del ventilador). | No                              | No                           |
-| `LOGIN`         | `XXXX` (contraseña) | Autentica la sesión remota para permitir el uso de comandos protegidos.       | N/A                             | No                           |
-| `LOGOUT`        | Ninguno           | Cierra la sesión remota autenticada.                                        | Sí                              | No                           |
-| `SET_PASS`      | `XXXX` (nueva pass) | Cambia la contraseña del sistema.                                           | Sí                              | Sí                           |
-| `FORCE_FAN`     | `N` (0, 40, 70, 100) | Fija la velocidad del ventilador a un nivel específico, ignorando la temperatura. | Sí                              | Sí                           |
-| `AUTO_FAN`      | Ninguno           | Devuelve el control del ventilador al modo automático basado en temperatura.  | Sí                              | Sí                           |
+1.  **room_control_init():** Inicializa todos los elementos del sistema.
 
+2.  **room_control_update():** Ejecutada periódicamente; maneja los estados y el display.
+
+3.  **room_control_process_key():** Procesa las entradas del teclado.
+
+4.  **room_control_set_temperature():** Actualiza temperatura y nivel de ventilador.
+
+5.  **room_control_force_fan_level():** modo manual.
+
+6.  **room_control_update_display():** Actualiza OLED.
+
+7.  **room_control_update_fan_pwm():** Aplica nivel PWM.
+
+8.  **room_control_change_state():** Transición segura de los estados.
 ---
 
-## 5. Técnicas de Optimización Aplicadas
+## 6. Técnicas de Optimización.
 
-Para asegurar un rendimiento fluido y un bajo consumo de CPU, se han aplicado varias técnicas de optimización:
+Durante el desarrollo del sistema embebido se implementaron diversas técnicas de optimización tanto a nivel de software como en el uso eficiente de los recursos del microcontrolador STM32L476RG. Estas optimizaciones fueron clave para garantizar un funcionamiento fluido, bajo consumo y buena capacidad de respuesta del sistema.
 
-1.  **Manejo de E/S por Interrupciones:** En lugar de usar bucles de sondeo (polling) que consumen CPU, la recepción de datos por `USART` y la detección de pulsaciones en el `keypad` se manejan mediante interrupciones. Esto permite que el microcontrolador realice otras tareas o entre en modos de bajo consumo mientras espera eventos externos.
+###  6.1. Estructura modular del código: 
+*   Se utilizó una estructura modular separando el código en archivos como room_control.c, dht11.c, keypad.c y controladores de periféricos. Esto no solo mejora la organización y mantenibilidad, sino que permite la reutilización de código y la compilación selectiva, lo cual reduce el tamaño del binario final.
 
-2.  **Lógica No Bloqueante (Non-Blocking):** El driver del sensor DHT11 está implementado como una máquina de estados no bloqueante. En lugar de detener todo el programa con `HAL_Delay()` mientras se espera la respuesta del sensor, la función `DHT11_Process()` se llama en cada ciclo del bucle principal, avanzando en la lectura del sensor paso a paso sin bloquear otras tareas.
+###  6.2. Máquina de estados finitos:
+*   El sistema de control de acceso y climatización se diseñó utilizando una máquina de estados finitos, lo que permite gestionar eventos de forma ordenada y eficiente, minimizando el uso de recursos al evitar estructuras de control complejas como múltiples condicionales anidados.
 
-3.  **Actualización de Pantalla por Eventos:** La pantalla OLED no se redibuja en cada ciclo del bucle principal, lo cual sería muy ineficiente y generaría un tráfico I2C constante. En su lugar, se utiliza una bandera (`display_update_needed`). La pantalla solo se actualiza cuando un evento relevante ocurre (un cambio de estado, una nueva lectura de temperatura, etc.), optimizando significativamente el rendimiento.
-```
+###  6.3. Uso eficiente del display OLED:
+*   El contenido mostrado en la pantalla se actualiza únicamente cuando hay un cambio relevante de estado. Esta técnica reduce el número de escrituras al display, que son costosas en tiempo, y disminuye el uso del bus I2C, permitiendo que otros periféricos puedan operar sin interferencias.
+
+###  6.4. Control por PWM con resolución adecuada:
+*   El control del ventilador se implementó utilizando PWM con una frecuencia y resolución que equilibran precisión y eficiencia energética. Se evita el uso de retardos innecesarios y se aprovecha el temporizador hardware para generar la señal sin intervención constante del procesador.
+
+###  6.5. Optimización en lectura de sensores:
+*   La lectura del sensor de temperatura se realiza de forma periódica, evitando consultas excesivas que puedan saturar el sistema o generar latencias en la respuesta del sistema. Además, se filtran lecturas erróneas para evitar procesamientos innecesarios.

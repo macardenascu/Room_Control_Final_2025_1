@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/
+cmake_ninja_workdir = C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/
 # =============================================================================
 # Object build statements for EXECUTABLE target Room_Control_Final_2025_1
 
@@ -49,131 +49,131 @@ cmake_ninja_workdir = C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Fina
 
 build cmake_object_order_depends_target_Room_Control_Final_2025_1: phony || cmake_object_order_depends_target_STM32_Drivers
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/main.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/main.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/main.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/main.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\main.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/stm32l4xx_it.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/stm32l4xx_it.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/stm32l4xx_it.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/stm32l4xx_it.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\stm32l4xx_it.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/stm32l4xx_hal_msp.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/stm32l4xx_hal_msp.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/stm32l4xx_hal_msp.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/stm32l4xx_hal_msp.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\stm32l4xx_hal_msp.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/sysmem.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/sysmem.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/sysmem.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/sysmem.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\sysmem.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/syscalls.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/syscalls.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/syscalls.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/syscalls.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\syscalls.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/startup_stm32l476xx.s.obj: ASM_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/startup_stm32l476xx.s || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/startup_stm32l476xx.s.obj: ASM_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/startup_stm32l476xx.s || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\startup_stm32l476xx.s.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -x assembler-with-cpp -MMD -MP -g
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/LED/led.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED/led.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/LED/led.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED/led.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\LED\led.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\LED
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ring_buffer/ring_buffer.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer/ring_buffer.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ring_buffer/ring_buffer.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer/ring_buffer.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ring_buffer\ring_buffer.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ring_buffer
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ssd1306/ssd1306.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306/ssd1306.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ssd1306/ssd1306.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306/ssd1306.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ssd1306\ssd1306.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ssd1306
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ssd1306/ssd1306_fonts.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306/ssd1306_fonts.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/ssd1306/ssd1306_fonts.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306/ssd1306_fonts.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ssd1306\ssd1306_fonts.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\ssd1306
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/keypad/keypad.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad/keypad.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Drivers/keypad/keypad.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad/keypad.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\keypad\keypad.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Drivers\keypad
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/room_control.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/room_control.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/room_control.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/room_control.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\room_control.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
   TARGET_PDB = Room_Control_Final_2025_1.pdb
 
-build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/dht11.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/dht11.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
+build CMakeFiles/Room_Control_Final_2025_1.dir/Core/Src/dht11.c.obj: C_COMPILER__Room_Control_Final_2025_1_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/dht11.c || cmake_object_order_depends_target_Room_Control_Final_2025_1
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src\dht11.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/LED -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ring_buffer -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/ssd1306 -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/keypad -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = CMakeFiles\Room_Control_Final_2025_1.dir
   OBJECT_FILE_DIR = CMakeFiles\Room_Control_Final_2025_1.dir\Core\Src
   TARGET_COMPILE_PDB = CMakeFiles\Room_Control_Final_2025_1.dir\
@@ -202,7 +202,7 @@ build Room_Control_Final_2025_1.elf: C_EXECUTABLE_LINKER__Room_Control_Final_202
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -SC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 -BC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -SC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 -BC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -214,7 +214,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 -BC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 -BC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -223,7 +223,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 # =============================================================================
 # Write statements declared in CMakeLists.txt:
-# C:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/CMakeLists.txt
+# C:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/CMakeLists.txt
 # =============================================================================
 
 # =============================================================================
@@ -235,201 +235,201 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 
 build cmake_object_order_depends_target_STM32_Drivers: phony || cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Src/system_stm32l4xx.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Core/Src/system_stm32l4xx.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Src/system_stm32l4xx.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src\system_stm32l4xx.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Core\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_i2c_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_i2c_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_rcc_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_rcc_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_flash_ramfunc.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_gpio.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_gpio.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_dma_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_dma_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_pwr_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_pwr_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_cortex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_cortex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_exti.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_exti.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_tim_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_tim_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
   TARGET_PDB = ""
 
-build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c || cmake_object_order_depends_target_STM32_Drivers
+build cmake/stm32cubemx/CMakeFiles/STM32_Drivers.dir/__/__/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c.obj: C_COMPILER__STM32_Drivers_unscanned_Debug C$:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Src/stm32l4xx_hal_uart_ex.c || cmake_object_order_depends_target_STM32_Drivers
   DEFINES = -DDEBUG -DSTM32L476xx -DUSE_HAL_DRIVER
   DEP_FILE = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src\stm32l4xx_hal_uart_ex.c.obj.d
   FLAGS = -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard  -Wall -Wextra -Wpedantic -fdata-sections -ffunction-sections -O0 -g3 -g -std=gnu11
-  INCLUDES = -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/Drivers/CMSIS/Include
+  INCLUDES = -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Core/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/STM32L4xx_HAL_Driver/Inc/Legacy -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Device/ST/STM32L4xx/Include -IC:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/Drivers/CMSIS/Include
   OBJECT_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir
   OBJECT_FILE_DIR = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\__\__\Drivers\STM32L4xx_HAL_Driver\Src
   TARGET_COMPILE_PDB = cmake\stm32cubemx\CMakeFiles\STM32_Drivers.dir\
@@ -447,7 +447,7 @@ build cmake/stm32cubemx/STM32_Drivers: phony cmake/stm32cubemx/CMakeFiles/STM32_
 # Utility command for edit_cache
 
 build cmake/stm32cubemx/CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1\cmake\stm32cubemx && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -SC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 -BC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1\cmake\stm32cubemx && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake-gui.exe -SC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 -BC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1"
   DESC = Running CMake cache editor...
   pool = console
   restat = 1
@@ -459,7 +459,7 @@ build cmake/stm32cubemx/edit_cache: phony cmake/stm32cubemx/CMakeFiles/edit_cach
 # Utility command for rebuild_cache
 
 build cmake/stm32cubemx/CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1\cmake\stm32cubemx && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1 -BC:\Users\Usuario-PC\Desktop\Estructuras\Room_Control_Final_2025_1"
+  COMMAND = cmd.exe /C "cd /D C:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1\cmake\stm32cubemx && C:\ST\STM32CubeCLT_1.18.0\CMake\bin\cmake.exe --regenerate-during-build -SC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1 -BC:\Users\Usuario\Desktop\Estructuras\Proyectofinal\Room_Control_Final_2025_1"
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -479,14 +479,14 @@ build STM32_Drivers: phony cmake/stm32cubemx/STM32_Drivers
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1
+# Folder: C:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1
 
 build all: phony Room_Control_Final_2025_1.elf cmake/stm32cubemx/all
 
 # =============================================================================
 
 #############################################
-# Folder: C:/Users/Usuario-PC/Desktop/Estructuras/Room_Control_Final_2025_1/cmake/stm32cubemx
+# Folder: C:/Users/Usuario/Desktop/Estructuras/Proyectofinal/Room_Control_Final_2025_1/cmake/stm32cubemx
 
 build cmake/stm32cubemx/all: phony cmake/stm32cubemx/STM32_Drivers
 

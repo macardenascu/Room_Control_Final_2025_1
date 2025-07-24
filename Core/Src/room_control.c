@@ -15,7 +15,7 @@ extern UART_HandleTypeDef huart2;
 #define DOOR_LOCK_Pin           DOOR_STATUS_Pin
 
 // System constants
-static const char DEFAULT_PASSWORD[] = "7777";
+static const char DEFAULT_PASSWORD[] = "0000";
 
 // Temperature thresholds for automatic fan control
 static const float TEMP_THRESHOLD_LOW = 25.0f;
@@ -254,9 +254,9 @@ static void room_control_update_display(room_control_t *room) {
     switch (room->current_state) {
         case ROOM_STATE_LOCKED:
             ssd1306_SetCursor(25, 10);
-            ssd1306_WriteString("SISTEMA", Font_11x18, White);
+            ssd1306_WriteString("SISTEMA", Font_7x10, White);
             ssd1306_SetCursor(15, 30);
-            ssd1306_WriteString("BLOQUEADO", Font_11x18, White);
+            ssd1306_WriteString("BLOQUEADO", Font_7x10, White);
             break;
 
         case ROOM_STATE_INPUT_PASSWORD:
@@ -290,9 +290,9 @@ static void room_control_update_display(room_control_t *room) {
 
         case ROOM_STATE_ACCESS_DENIED:
             ssd1306_SetCursor(25, 10);
-            ssd1306_WriteString("ACCESO", Font_11x18, White);
+            ssd1306_WriteString("ACCESO", Font_7x10, White);
             ssd1306_SetCursor(15, 30);
-            ssd1306_WriteString("DENEGADO", Font_11x18, White);
+            ssd1306_WriteString("DENEGADO", Font_7x10, White);
             break;
 
         default:
